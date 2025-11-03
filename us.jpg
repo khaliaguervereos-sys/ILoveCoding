@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Happy Monthsary 💖</title>
+<style>
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #ffb6c1;
+    overflow: hidden;
+  }
+
+  /* Floating heart animation */
+  @keyframes float {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+  }
+  .heart {
+    position: fixed;
+    left: calc(10% + 80% * var(--x));
+    animation: float 8s linear infinite;
+    color: rgba(255,255,255,0.7);
+    font-size: calc(20px + 30px * var(--size));
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #ff005d;
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { transform: scale(1);}
+    50% { transform: scale(1.15);}
+  }
+  p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #ff69b4;
+  }
+  img.photo {
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #fff;
+  }
+  iframe {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 12px;
+  }
+</style>
+</head>
+<body>
+  <!-- floating hearts -->
+  <div class="heart" style="--x:0.1;--size:0.8;">💖</div>
+  <div class="heart" style="--x:0.3;--size:1;">💗</div>
+  <div class="heart" style="--x:0.5;--size:0.9;">💞</div>
+  <div class="heart" style="--x:0.7;--size:1.1;">💘</div>
+  <div class="heart" style="--x:0.9;--size:0.7;">💕</div>
+
+  <h1>💖 Happy Monthsary, Angel! 💖</h1>
+
+  <img class="photo" src="us.jpg" alt="Janel and Angel photo">
+
+  <p>I made this in coding because it’s the only way I can express my love for you —  
+  my handwriting isn’t that good if I write it by hand.  
+  I love you baby. Happy monthsary! ♥️</p>
+
+  <p>— From Janel 💻</p>
+
+  <!-- 🎵 Embedded "Co-Pilot" YouTube Video -->
+  <iframe 
+    src="https://www.youtube.com/embed/Cip_qF7LbaY?autoplay=1&loop=1&playlist=Cip_qF7LbaY" 
+    title="Co-Pilot Song" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+</body>
+</html>

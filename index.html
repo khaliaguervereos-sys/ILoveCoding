@@ -9,32 +9,55 @@
     margin: 0;
     padding: 40px;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #ffe6f0 0%, #f2e6ff 100%);
+    color: #fff;
     text-align: center;
-    color: #333;
+    background: radial-gradient(circle at top left, #ff99cc, #cc99ff);
+    overflow: hidden;
   }
+
+  /* 🌈 Floating colorful heart animation */
+  @keyframes float {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+  }
+  @keyframes colorChange {
+    0% { color: #ff99cc; }
+    33% { color: #cc66ff; }
+    66% { color: #ff3366; }
+    100% { color: #ff99cc; }
+  }
+  .heart {
+    position: fixed;
+    left: calc(10% + 80% * var(--x));
+    animation: float 8s linear infinite, colorChange 3s ease-in-out infinite;
+    font-size: calc(20px + 30px * var(--size));
+  }
+
   h1 {
-    color: #ff5e94;
     font-size: 48px;
+    color: #ff005d;
+    text-shadow: 0 0 10px #fff;
     animation: pulse 1.5s infinite;
   }
   @keyframes pulse {
-    0%,100% {transform: scale(1);}
-    50% {transform: scale(1.15);}
+    0%,100% { transform: scale(1);}
+    50% { transform: scale(1.15);}
   }
+
   p {
     font-size: 20px;
     margin-top: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #ff69b4;
   }
-  .gif {
-    width: 220px;
-    border-radius: 15px;
+
+  img.photo {
+    width: 250px;
+    border-radius: 20px;
     margin-top: 20px;
+    box-shadow: 0 0 15px #fff;
   }
-  .names {
-    color: #8b008b;
-    font-weight: bold;
-  }
+
   iframe {
     margin-top: 30px;
     width: 90%;
@@ -46,22 +69,31 @@
 </style>
 </head>
 <body>
-  <h1>💖 Happy Monthsary, <span class="names">Angel</span>! 💖</h1>
+  <!-- 💞 floating colorful hearts -->
+  <div class="heart" style="--x:0.1;--size:0.8;">💖</div>
+  <div class="heart" style="--x:0.25;--size:1;">💗</div>
+  <div class="heart" style="--x:0.4;--size:0.9;">💞</div>
+  <div class="heart" style="--x:0.6;--size:1.1;">💘</div>
+  <div class="heart" style="--x:0.8;--size:0.7;">💕</div>
+  <div class="heart" style="--x:0.9;--size:1;">💓</div>
 
-  <img class="gif" src="https://media.giphy.com/media/l4FGI8GoTL7N4DsyI/giphy.gif" alt="heart gif">
+  <h1>💖 Happy Monthsary, Angel! 💖</h1>
 
-  <p>I made this in coding because it’s the only way I can express my love for you — my handwriting isn’t that good if I write it by hand.  
+  <!-- 💑 your photo -->
+  <img class="photo" src="us.jpg" alt="Janel and Angel photo">
+
+  <p>I made this in coding because it’s the only way I can express my love for you —  
+  my handwriting isn’t that good if I write it by hand.  
   I love you baby. Happy monthsary! ♥️</p>
 
-  <p>— from <span class="names">Janel</span></p>
+  <p>— From Janel 💻</p>
 
-  <!-- 🎵 Embedded "Co-Pilot" YouTube Music Video -->
+  <!-- 🎵 Embedded "Co-Pilot" YouTube Video -->
   <iframe 
     src="https://www.youtube.com/embed/Cip_qF7LbaY?autoplay=1&loop=1&playlist=Cip_qF7LbaY" 
     title="Co-Pilot Song" 
     allow="autoplay; encrypted-media" 
     allowfullscreen>
   </iframe>
-
 </body>
 </html>

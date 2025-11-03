@@ -69,7 +69,7 @@
 
   <h1>💖 Happy Monthsary, Angel! 💖</h1>
 
-  <img class="photo" src="us.jpg" alt="Janel and Angel photo">
+<img class="photo" src="https://raw.githubusercontent.com/os-sys/ILoveCoding/main/IMG_20250706_174356_121.jpg" alt="Janel and Angel photo">
 
   <p>I made this in coding because it’s the only way I can express my love for you —  
   my handwriting isn’t that good if I write it by hand.  
@@ -78,11 +78,11 @@
   <p>— From Janel 💻</p>
 
   <!-- 🎵 Embedded "Co-Pilot" YouTube Video -->
-  <iframe 
-    src="https://www.youtube.com/embed/Cip_qF7LbaY?autoplay=1&loop=1&playlist=Cip_qF7LbaY" 
-    title="Co-Pilot Song" 
-    allow="autoplay; encrypted-media" 
-    allowfullscreen>
+  <iframe
+  src="https://youtu.be/WlgR9BVFzXM?si=-jw4s8ZKiVfmpI0H" 
+  title="Co-Pilot Song"
+  allow="autoplay; encrypted-media"
+  allowfullscreen>
   </iframe>
 </body>
 </html>
